@@ -17,7 +17,7 @@ def _connect_reddit():
 	
 	return praw.Reddit(client_id=_config.r_oauth_key, client_secret=_config.r_oauth_secret,
 					username=_config.r_username, password=_config.r_password,
-					user_agent=_config.useragent,
+					user_agent="grandorder-holo script /u/square_smile",
 					check_for_updates=False)
 
 def _ensure_connection():
