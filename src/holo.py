@@ -114,11 +114,11 @@ if __name__ == "__main__":
 		logging.basicConfig(
 			#filename=log_file,
 			handlers=[TimedRotatingFileHandler(log_file, when="midnight", backupCount=7, encoding="UTF-8")],
-			format="%(asctime)s | %(name)s | %(levelname)s | %(message)s",
+			format="%(asctime)s | %(name)s | %(levelname)-5s | %(message)s",
 			datefmt="%Y-%m-%d %H:%M:%S",
 			level=logging.DEBUG if c.debug else logging.INFO)
 	else:
-		logging.basicConfig(format="%(levelname)s | %(message)s", level=logging.DEBUG if c.debug else logging.INFO)
+		logging.basicConfig(format="%(levelname)-5s | %(message)s", level=logging.DEBUG if c.debug else logging.INFO)
 	logging.getLogger("requests").setLevel(logging.WARNING)
 	logging.getLogger("praw-script-oauth").setLevel(logging.WARNING)
 	
