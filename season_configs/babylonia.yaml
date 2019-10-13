@@ -4,11 +4,10 @@ has_source: true
 info:
   mal: 'https://myanimelist.net/anime/38084/Fate_Grand_Order__Zettai_Majuu_Sensen_Babylonia'
   anilist: 'https://anilist.co/anime/103275/FateGrand-Order-Zettai-Majuu-Sensen-Babylonia/'
-  anidb: 'https://anidb.net/perl-bin/animedb.pl?show=anime&aid=14238'
+  anidb: 'https://anidb.net/anime/14238'
   kitsu: 'https://kitsu.io/anime/fate-grand-order-zettai-majuu-sensen-babylonia'
   animeplanet: 'https://www.anime-planet.com/anime/fate-grand-order-zettai-majuu-sensen-babylonia'
   official: 'https://anime.fate-go.jp/ep7-tv/'
-  subreddit: '/r/grandorder'
 streams:
   crunchyroll: ''
   funimation|Funimation: 'https://www.funimation.com/shows/fategrand-order-absolute-demonic-front-babylonia/'
@@ -22,6 +21,7 @@ streams:
   amazon|Amazon US: ''
   amazon_uk|Amazon UK: ''
   primevideo|Prime Video International: ''
+  nyaa: 'Fate Grand Order Babylonia'
 #---
 #title: ''
 #alias: ['']
