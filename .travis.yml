@@ -1,0 +1,25 @@
+language: python
+python:
+- '3.6'
+
+install:
+- pip install -r requirements.txt
+
+# Updates on master go to /r/anime
+# All other branches go to /r/animestaging for testing
+# Pull requests are validated only
+script:
+- |
+  if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+    if [ "$TRAVIS_BRANCH" = "master" ]; then
+      python src/holo.py -m setup
+    else
+      python utils/build.py --subreddit_name animestaging;
+    fi
+  fi
+deploy:
+- on:
+    all_branches: true
+  provider: script
+  script: python src/holo.py
+  skip_cleanup: true
